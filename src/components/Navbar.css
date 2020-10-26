@@ -1,11 +1,12 @@
  .navbar {
-  background-color: #EDF0F2;
-  height: 4rem;
+  background-color: hsl(204, 16%, 94%);
+  /* height: 4rem; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
 } 
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  /* height: 80px; */
   max-width: 1500px;
 }
 
@@ -46,9 +47,10 @@
   margin-right: 2rem;
 }
 
-.nav-item {
-  height: 80px;
-}
+/* .nav-item {
+   height: 80px;
+} */
+
 .nav-item a{
   color: #131F4F;
 }
