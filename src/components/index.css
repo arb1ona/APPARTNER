@@ -190,7 +190,7 @@ code {
 
 .mapContainer {
   position: fixed;
-  top: 10rem;
+  top: 11rem;
   left: 0;
   bottom: 0;
   right: 45%;
@@ -366,7 +366,14 @@ html, body {
   position: relative;
   color: #131F4F;
 }
-
+.new__filters{
+  top: 5rem;
+  height: 5rem;
+  background-color: #1078ff;
+  margin-bottom: 4.5rem;
+    z-index: 500;
+    position: sticky;
+}
 /* .cards {
   max-width: 100%;
 } */
@@ -809,11 +816,13 @@ text-align: center;
 
 }
 
-.divider{
+
+
+/* .divider{
   width:0.3rem;
   height:auto;
   display:inline-block;
-}
+} */
 .divider-new{
   width:5% !important;
   height:auto;
@@ -980,3 +989,8 @@ margin-bottom: 0;
 /* .product-rating {
   margin-bottom: 1rem;
 } */
+/*------------------------------- SEMANTIC UI --------------------------*/
+
+.ui.dropdown .menu .active.item{
+  font-size: 14px;
+}

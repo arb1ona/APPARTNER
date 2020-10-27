@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import logo from './logo.png'
 
 function Footer() {
   return (
@@ -50,6 +51,7 @@ function Footer() {
             <small><Link to='/'>Ambassadors</Link></small>
             <small><Link to='/'>Agency</Link></small>
             <small><Link to='/'>Influencer</Link></small>
+            <small><Link to='/'>Diversity & Belonging</Link></small>
           </div>
           <div className='footer-link-items'>
             <h2>Recources</h2>
@@ -62,12 +64,13 @@ function Footer() {
       </div>
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <div className='footer-logo'>
+          {/* <div className='footer-logo'>
             <Link to='/' className='social-logo'>
+              {/* <img src={logo} style={{ width: "4rem" }}></img>
               Appartner
             </Link>
           </div>
-          <small className='website-rights'>Appartner © 2020</small>
+      <small className='website-rights'>Appartner © 2020</small> */}
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
@@ -111,8 +114,8 @@ function Footer() {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
 

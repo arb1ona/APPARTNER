@@ -2,23 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from './logo.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  // const [scrolled, setScrolled] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  // const handleScroll = () => {
-  //   const offset = window.scrollY;
-  //   if (offset > 200) {
-  //     setScrolled(true);
-  //   }
-  //   else {
-  //     setScrolled(false);
-  //   }
-  // }
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -27,14 +18,6 @@ function Navbar() {
       setButton(true);
     }
   };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
-  // })
-  // let navbarClasses = ['navbar'];
-  // if (scrolled) {
-  //   navbarClasses.push('scrolled');
-  // }
 
   useEffect(() => {
     showButton();
@@ -47,8 +30,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <img src={logo} style={{ width: "4rem" }}></img>
             Appartner
-            {/* <i className='fab fa-typo3' /> */}
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

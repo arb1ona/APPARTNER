@@ -86,7 +86,7 @@ class ListingScreen extends React.Component {
           toggleFilter={this.toggleFilter}
           handleFilterChange={this.handleFilterChange}
         ></Header> */}
-
+        <div className="new__filters"></div>
         <div className="cards-list row ">
           {
             properties.map(property => {
