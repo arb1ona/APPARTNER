@@ -2,8 +2,6 @@ import React from 'react';
 import './Articles.css';
 import CardItem from './CardItem';
 import AutoPlay from "./AutoPlay";
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
 
 function Articles() {
     return (
