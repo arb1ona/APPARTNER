@@ -28,6 +28,15 @@
   transform: scale(1.05);
 } */
 
+.btn--outline--new {
+  background-color: #131F4F;
+  color: #EDF0F2;
+  border-radius: 15px;
+  padding: 8px 20px;
+  /* border: 1px solid var(--primary); */
+  transition: all 0.3s ease-out;
+}
+
 .btn--medium {
   padding: 12px 24px;
   font-size: 14px;
