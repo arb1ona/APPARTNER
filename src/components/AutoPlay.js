@@ -21,7 +21,7 @@ export default class AutoPlay extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 2000,
-      autoplaySpeed: 100,
+      autoplaySpeed: 1000,
       cssEase: "linear",
     };
     return (
@@ -39,10 +39,10 @@ export default class AutoPlay extends Component {
           <Image src={Cisco} style={{ width: '150px', height: '75px' }} />
         </div>
         <div>
-          <Image src={facebook} style={{ width: '150px', height: '90px' }} />
+          <Image src={facebook} style={{ width: '160px', height: '90px' }} />
         </div>
         <div>
-          <Image src={Booking} style={{ width: '150px', height: '100px' }} />
+          <Image src={Booking} style={{ width: '180px', height: '100px' }} />
         </div>
       </Slider>
     );
