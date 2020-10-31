@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+import { ButtonSearch } from './ButtonSearch';
 import './HeroSection.css';
-import hero4 from './hero4.jpg'
+import hero5 from './hero5.jpg'
+// import { Button } from './Button';
 import DropdownRoomate from './DropdownRoomate'
 
 
@@ -10,26 +11,31 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <div style={{
-        backgroundImage: `url(${require("./hero4.jpg")})`,
+        backgroundImage: `url(${require("./hero5.jpg")})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         width: '100%',
         height: '100%'
-      }}></div>        <DropdownRoomate />
+      }}></div>
 
-      {/* <div className="wrapper">
-        {/* <div className="search_box">
+      <div className="wrapper">
+        <div className="search_box">
           <i className="fas fa-search"></i>
           <div className="search_field">
             <input type="text" className="input" placeholder="Search for a location..." />
           </div>
+
           <div className="dropdown">
-            <div className="default_option">Roomates</div>
+            <DropdownRoomate />
+            <ButtonSearch buttonStyle='btn--outline'>SEARCH</ButtonSearch>
+
+            {/* <div className="default_option">
+            </div> */}
+
           </div>
-        </div> 
-        <DropdownRoomate />
-      </div> */}
+        </div>
+      </div>
       {/* <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
