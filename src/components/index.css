@@ -994,3 +994,32 @@ margin-bottom: 0;
 .ui.dropdown .menu .active.item{
   font-size: 14px;
 }
+
+.css-yk16xz-control{
+  width: 150px;
+}
+.css-tlfecz-indicatorContainer{
+color: #131F4F;
+}
+.css-yk16xz-control {
+border-color: #fff !important;
+}
+
+.css-1okebmr-indicatorSeparator{
+  background-color:#fff !important;
+}
+.css-yk16xz-control {
+border-style: none;
+}
+.dropdown{
+  outline: none;
+}
+
+#hello:focus
+{
+  outline:none!important;
+} 
+/* .dropdown-container:focus{
+  outline: none!important;
+  border: none !important;
+} */
