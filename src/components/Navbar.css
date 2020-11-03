@@ -107,6 +107,7 @@
   .nav-menu.active {
     background: hsl(204, 16%, 94%);
     left: 0;
+    top:5rem;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
@@ -144,7 +145,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: #131F4F;
     font-size: 2rem;
   }
 
