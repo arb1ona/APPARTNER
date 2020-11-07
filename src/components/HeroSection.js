@@ -28,12 +28,12 @@ function HeroSection() {
 
           <div className="dropdown">
             <DropdownRoomate />
-            <ButtonSearch buttonStyle='btn--outline'>SEARCH</ButtonSearch>
 
             {/* <div className="default_option">
             </div> */}
 
           </div>
+          <ButtonSearch buttonStyle='btn--outline'>SEARCH</ButtonSearch>
         </div>
       </div>
       {/* <h1>ADVENTURE AWAITS</h1>
