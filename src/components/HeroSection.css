@@ -75,6 +75,7 @@
 
 
 .wrapper{
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,17 +83,19 @@
 }
 
 .wrapper .search_box{
-  width: 420px;
+  width: 450px;
   background: #fff;
   border-radius: 15px;
     height: 5rem;
   display: flex;
   padding: 10px;
   box-shadow: 0 8px 6px -5px #969595;
+  /* box-shadow: 0 15px 35px 5px #c0cae0; */
 }
 
 .wrapper .search_box .dropdown{
   width: 150px;
+  margin-right: 30px;
   /* border-left: 2px solid #dde2f1; */
   color: #9fa3b1;
   position: relative;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { ButtonSearch } from './ButtonSearch';
+import { ButtonSearchHero } from './ButtonSearchHero';
 import './HeroSection.css';
 import hero5 from './hero5.jpg'
 // import { Button } from './Button';
@@ -33,27 +33,27 @@ function HeroSection() {
             </div> */}
 
           </div>
-          <ButtonSearch buttonStyle='btn--outline'>SEARCH</ButtonSearch>
         </div>
+        <ButtonSearchHero buttonStyle='btn--outline'>SEARCH</ButtonSearchHero>
       </div>
       {/* <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button> */}
+      <Button
+      className='btns'
+      buttonStyle='btn--outline'
+      buttonSize='btn--large'
+      >
+      GET STARTED
+      </Button>
+      <Button
+      className='btns'
+      buttonStyle='btn--primary'
+      buttonSize='btn--large'
+      onClick={console.log('hey')}
+      >
+      WATCH TRAILER <i className='far fa-play-circle' />
+    </Button> */}
     </div >
   );
 }
