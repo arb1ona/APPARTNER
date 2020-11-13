@@ -83,22 +83,16 @@ class GoogleMap extends React.Component {
       this.marker = new google.maps.Marker({
         position: { lat: latitude, lng: longitude },
         map: this.map,
-        // label: {
-        //   color: '#ffffff',
-        //text: `${index + 1}`,
-        // },
         icon: {
           url: "https://svgshare.com/i/QBj.svg",
           scaledSize: new google.maps.Size(50, 40),
           origin: new google.maps.Point(0, 0),
-          //anchor: new google.maps.Point(0, 30),
         },
         animation: google.maps.Animation.DROP,
       });
 
       const infoWindow = new google.maps.InfoWindow({
         content: <MapCard picture={picture} onClick={this.handleModalOpen} />,
-        // content: `<div style='float:left'><img src=${picture}></div><div style='float:right; padding: 10px;'><b>Title</b><br />${address}<br />${city}</div>`
       });
 
       this.marker.infoWindow = infoWindow;
