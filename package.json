@@ -1,5 +1,5 @@
 {
-  "name": "Appartner",
+  "name": "appartner",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,8 +23,7 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "serve -s build",
-    "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
