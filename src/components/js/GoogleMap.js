@@ -38,26 +38,6 @@ class GoogleMap extends React.Component {
     })
   }
 
-  // showModal = () => {
-  //   this.setState({ show: true });
-  // };
-
-  // hideModal = () => {
-  //   this.setState({ show: false });
-  // };
- 
-  
-  // When the user clicks on the button, open the modal
-//   onclick = function() {
-//     const modal = document.getElementById("myModal");
-//     const button = document.getElementById("myButton");
-//   modal.style.display = "block";
-// }
-  
-  // onClick = function () { // overwrites the existing handler
-  //    alert('After'); // only this will be shown
-  //  };
-
   componentDidMount() {
     const { properties, activeProperty, options } = this.props;
     const { latitude, longitude } = activeProperty;
@@ -87,11 +67,7 @@ class GoogleMap extends React.Component {
 
 
     properties.map(property => {
-      const { address, index, latitude, longitude, city, picture,modal} = property;
-        const shadow = new google.maps.Marker(
-          'http://maps.gstatic.com/mapfiles/shadow50.png', null, null,
-          new google.maps.Point(10, 34)
-          );
+      const { address, index, _id, latitude, longitude, city, picture,modal, price} = property;
       this.marker = new google.maps.Marker({
         position: { lat: latitude, lng: longitude },
         map: this.map,
@@ -99,62 +75,47 @@ class GoogleMap extends React.Component {
         //   color: '#ffffff',
         //text: `${index + 1}`,
         // },
-        shadow: shadow,
         icon: {
           //url:'https://svgshare.com/i/RUk.svg',
           url: 'https://svgshare.com/i/QBj.svg',
-          scaledSize: new google.maps.Size(50, 40),
+          scaledSize: new google.maps.Size(38, 40),
           origin: new google.maps.Point(0, 0),
           //anchor: new google.maps.Point(0, 30),
         },
         animation: google.maps.Animation.DROP
       });
       const contentString =
-      '<a href="./index">' +
+      `<a href="/house?id=${_id}" ` +
       '<div id="content">' +
       '<div id="siteNotice">' +
       "</div>" +
         '<div id="bodyContent">' +
         `<img class='image-info-window'src=${picture}>` +
-        `<p class="firstHeading"><b>${address}, ${city}</b></p>`+
+        `<p class="firstHeading"><b>${address}, ${city}</b></p>` +
+        `<p class="firstHeading"><b>${price} ALL</b></p>`+
         "</div>" +
         "</div>"+
       "</a> ";
       
-
-      // const contentString =
-      // '<div id="content">' +
-      // '<div id="siteNotice">' +
-      // "</div>" +
-      //   '<div id="bodyContent">' +
-      //   `<img class='image-info-window'src=${picture}>` +
-      //   `<p class="firstHeading"><b>${address}, ${city}</b></p>`+
-      // '<a href="./index">' +
-      // "<button class='button-info-window'>Details</button></a> " +
-      // "</div>" +
-      //   "</div>";
       
       const infoWindow = new google.maps.InfoWindow({
       content: contentString
-        //content: `<img style='width: 13rem; height:10rem' src=${picture}><br>${address}</br><Link href="url">link text</Link><input type="button" onclick="alert('Clickkkk!')" id="elem" value="Click me">`
-//        content: `<img style='width: 13rem; height:10rem' src=${picture}><br>${address}</br><input type="button" id="elem" onclick=alert("before") value="Click me">`
-       // content: `<div><img style='width: 13rem; height:10rem' src=${picture}><br><input type="button" id="elem" onclick=${this.showModal} value="Click me"></div>`
-      })
+       })
 
       this.marker.infoWindow = infoWindow;
 
-      // this.marker.addListener('click', function () {
-      //   //hide all other info windows on click
-      //   this.hideAll()
-      //   // set active property ono the state
-      //   setActiveProperty(property, true);
-      // }.bind(this)); // important to bind this
+      this.marker.addListener('click', function () {
+        //hide all other info windows on click
+        this.hideAll()
+        // set active property ono the state
+        setActiveProperty(property, true);
+      }.bind(this)); // important to bind this
 
-      // push this marker to the markers array on the state
+      //push this marker to the markers array on the state
       markers.push(this.marker);
 
       //show active property info window
-      // this.showInfoWindow(activePropertyIndex);
+    // this.showInfoWindow(activePropertyIndex);
     })
   }
 

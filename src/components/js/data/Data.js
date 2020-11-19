@@ -6,28 +6,31 @@ const data = {
             "index": 0,
             "price": "58,000",
             "picture": "https://cdn.vox-cdn.com/thumbor/B2Ca5KWYL9ZKYEVJBBZ5Hv5NuHE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/11545789/House_Calls_Soldi_Caillier_Tacoma__WA_living_room_Rafael_Soldi.jpg",
-            "picture2": "https://student-cribs.com/assets/cbf1814569ba316686657265bf62102a.jpg",
-            "picture3": "https://studentstay.co.uk/media/properties/images/VibeStudentLiving-Studio-May17.jpg",
-            "picture4": "https://www.mystudenthalls.com/wp-content/uploads/2017/10/London_student_accommodation_fulham_palace_road_studio.jpg",
             "city": "Tirana",
             "address": "Rruga Mine Peza",
             "latitude": 41.330044,
             "longitude": 19.814541,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
-            "carSpaces": 2
+            "carSpaces": 2,
+            "bedrooms": 4, "roomates": 6,
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e9297ec4cca9c56bf61af",
             "title": "Deluxe Apartment Y",
             "index": 1,
-            "price": 703725,
-            "picture": "https://www.studentcastle.co.uk/media/2123/2234_0019.jpg?anchor=middlecenter&mode=crop&quality=75&format=jpg&scale=both&width=1200&height=750",
+            "price": "703,725",
+            "picture": ["https://www.studentcastle.co.uk/media/2123/2234_0019.jpg?anchor=middlecenter&mode=crop&quality=75&format=jpg&scale=both&width=1200&height=750",
+            "https://student-cribs.com/assets/cbf1814569ba316686657265bf62102a.jpg",
+             "https://studentstay.co.uk/media/properties/images/VibeStudentLiving-Studio-May17.jpg",
+             "https://www.mystudenthalls.com/wp-content/uploads/2017/10/London_student_accommodation_fulham_palace_road_studio.jpg"],
             "city": "Tirana",
             "address": "Rruga e Durrësit",
             "latitude": 41.332572,
             "longitude": 19.805032,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 0
         },
@@ -40,7 +43,7 @@ const data = {
             "address": "Rruga Hysni Gërbolli",
             "latitude": 41.334484,
             "longitude": 19.804664,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -53,7 +56,7 @@ const data = {
             "address": "Don Bosco",
             "latitude": 41.334685,
             "longitude": 19.807052,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -66,7 +69,7 @@ const data = {
             "address": "Rruga Studenti",
             "latitude": 41.328387,
             "longitude": 19.800213,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -79,7 +82,7 @@ const data = {
             "address": "Rruga Studenti",
             "latitude": 41.329240,
             "longitude": 19.800053,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -92,7 +95,7 @@ const data = {
             "address": "Rruga Frosina Plaku",
             "latitude": 41.327699,
             "longitude": 19.802194,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 2
         },
@@ -105,7 +108,7 @@ const data = {
             "address": "Rruga Sandër Prosi",
             "latitude": 41.328497,
             "longitude": 19.803653,
-            "bedrooms": 4,
+            "bedrooms": 4, "roomates": 6,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -118,7 +121,7 @@ const data = {
             "address": "Rruga Frosina Plaku",
             "latitude": 41.327527,
             "longitude": 19.801693,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 0
         },
@@ -131,7 +134,7 @@ const data = {
             "address": "Rruga Kongresi i Lushnjes",
             "latitude": 41.326528,
             "longitude": 19.801993,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -144,7 +147,7 @@ const data = {
             "address": "Rruga Vaçe Zela",
             "latitude": 41.325948,
             "longitude": 19.793516,
-            "bedrooms": 4,
+            "bedrooms": 4, "roomates": 6,
             "bathrooms": 1,
             "carSpaces": 2
         },
@@ -157,7 +160,7 @@ const data = {
             "address": "Rruga Besim Imami",
             "latitude": 41.324902,
             "longitude": 19.808798,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 0
         },
@@ -170,7 +173,7 @@ const data = {
             "address": "Rruga Vangjush Furxhi",
             "latitude": 41.324217,
             "longitude": 19.810815,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -183,7 +186,7 @@ const data = {
             "address": "Rruga Hysni Gërbolli",
             "latitude": 41.336053,
             "longitude": 19.800416,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 1,
             "carSpaces": 2
         },
@@ -196,7 +199,7 @@ const data = {
             "address": "Rruga Petro Nini Luarasi",
             "latitude": 41.325621,
             "longitude": 19.836247,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 2
         },
@@ -209,7 +212,7 @@ const data = {
             "address": "Rruga Njazi Demi",
             "latitude": 41.321296,
             "longitude": 19.807648,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 0
         },
@@ -222,7 +225,7 @@ const data = {
             "address": "Rruga e Elbasanit",
             "latitude": 41.321553,
             "longitude": 19.825978,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -235,7 +238,7 @@ const data = {
             "address": "Rruga e Elbasanit",
             "latitude": 41.322958,
             "longitude": 19.824669,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -248,7 +251,7 @@ const data = {
             "address": "Rruga e Elbasanit",
             "latitude": 41.323740,
             "longitude": 19.825163,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 1
         },
@@ -261,7 +264,7 @@ const data = {
             "address": "Rruga Pjeter Budi",
             "latitude": 41.320942,
             "longitude": 19.829826,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -274,7 +277,7 @@ const data = {
             "address": "Rruga Arben Broci",
             "latitude": 41.320048,
             "longitude": 19.832433,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -287,7 +290,7 @@ const data = {
             "address": "Rruga Brigada e VIII",
             "latitude": 41.322016,
             "longitude": 19.815888,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 2
         },
@@ -300,7 +303,7 @@ const data = {
             "address": "Rruga Andon Zako Çajupi",
             "latitude": 41.319143,
             "longitude": 19.813013,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 2
         },
@@ -313,7 +316,7 @@ const data = {
             "address": "Rruga Bardhok Biba",
             "latitude": 41.330735,
             "longitude": 19.819697,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -326,7 +329,7 @@ const data = {
             "address": "Rruga Qemal Stafa",
             "latitude": 41.330611,
             "longitude": 19.822275,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
             "carSpaces": 1
         },
@@ -339,7 +342,7 @@ const data = {
             "address": "Rruga Qemal Stafa",
             "latitude": 41.331304,
             "longitude": 19.824796,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 1
         },
@@ -352,7 +355,7 @@ const data = {
             "address": "Rruga Kostandin Kristoforidhi",
             "latitude": 41.329733,
             "longitude": 19.822200,
-            "bedrooms": 3,
+            "bedrooms": 3, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 0
         },
@@ -365,7 +368,7 @@ const data = {
             "address": "Rruga",
             "latitude": 41.334933,
             "longitude": 19.818481,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 2,
             "carSpaces": 0
         },
@@ -378,7 +381,7 @@ const data = {
             "address": "Rruga 4 Dëshmorët",
             "latitude": 41.335531,
             "longitude": 19.827488,
-            "bedrooms": 2,
+            "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
             "carSpaces": 2
         },
@@ -391,7 +394,7 @@ const data = {
             "address": "Rruga Spiro Moisiu",
             "latitude": 41.328812,
             "longitude": 19.829621,
-            "bedrooms": 1,
+            "bedrooms": 1, "roomates": 2,
             "bathrooms": 1,
             "carSpaces": 1
         }

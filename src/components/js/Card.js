@@ -15,11 +15,11 @@ const Card = ({ property, activeProperty, setActiveProperty }) => {
           {address},{city}
         </p>
         <ul className="features">
-          <li className="icon-bed">{bedrooms}<span>bedrooms</span></li>
-          <li className="icon-bath">{bathrooms}<span>bathrooms</span></li>
-          <li className="icon-car">{carSpaces}<span>parking spots</span></li>
-          <span className="price">ALL {price}<span>/month</span></span>
+          <li className="icon-bed">{bedrooms}</li>
+          <li className="icon-bath">{bathrooms}</li>
+          <li className="icon-car"><div style={{marginLeft:"1rem"}}>{carSpaces}</div></li>
         </ul>
+          <p className="price">ALL {price}<span>/month</span></p>
       </div>
     </div>)
 }

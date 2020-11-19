@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Filter from './Filter';
+
 //import image from '../images/house-location-pin.svg';
 
 const Header = ({ filterIsVisible, toggleFilter, handleFilterChange, city }) => {

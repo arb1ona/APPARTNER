@@ -4,7 +4,6 @@ import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Articles from '../Articles';
-import AutoPlay from '../AutoPlay';
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
       <HeroSection />
       <Cards />
       <Articles />
-      {/* <AutoPlay /> */}
       <Footer />
     </>
   );
