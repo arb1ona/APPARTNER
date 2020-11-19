@@ -2,7 +2,7 @@ const data = {
     "properties": [
         {
             "_id": "593e9297e17df20c4a237d42",
-            "title": "Hidden Gem In the Center Of Tirana",
+            "title": "Hidden Gem In Tirana",
             "index": 0,
             "price": "58,000",
             "picture": "https://cdn.vox-cdn.com/thumbor/B2Ca5KWYL9ZKYEVJBBZ5Hv5NuHE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/11545789/House_Calls_Soldi_Caillier_Tacoma__WA_living_room_Rafael_Soldi.jpg",
@@ -32,7 +32,9 @@ const data = {
             "longitude": 19.805032,
             "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
-            "carSpaces": 0
+            "carSpaces": 0,
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e929773c71925e5d7c11c",
@@ -45,7 +47,10 @@ const data = {
             "longitude": 19.804664,
             "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
-            "carSpaces": 0
+            "carSpaces": 0,
+            "title": "Perfect Place x Students",
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e92973d4d15eedb129aee",
@@ -58,7 +63,9 @@ const data = {
             "longitude": 19.807052,
             "bedrooms": 3, "roomates": 4,
             "bathrooms": 2,
-            "carSpaces": 0
+            "carSpaces": 0, "title": "New House in town",
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e929728b7f8543b7907e1",
@@ -71,7 +78,9 @@ const data = {
             "longitude": 19.800213,
             "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
-            "carSpaces": 1
+            "carSpaces": 1, "title": "Perfect Place x Students",
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e92975996a6263d146444",
@@ -84,7 +93,9 @@ const data = {
             "longitude": 19.800053,
             "bedrooms": 2, "roomates": 4,
             "bathrooms": 1,
-            "carSpaces": 1
+            "carSpaces": 1, "title": "Perfect Place x Students",
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e9297a13e246da5ba0884",
@@ -97,7 +108,9 @@ const data = {
             "longitude": 19.802194,
             "bedrooms": 2, "roomates": 4,
             "bathrooms": 2,
-            "carSpaces": 2
+            "carSpaces": 2 , "title": "Perfect Place x Students",
+            "description": "Filled with natural light, parquet floors and located in the center in an old building but full with character our place is ideal for your visit and stay in Tirana."+ "  It has a full functional indoor & outdoor kitchen and a very cozy living room with fireplace."
+            +" Windows have shutters and there is also a balcony where you can enjoy meals."
         },
         {
             "_id": "593e9297afa51a013fcd07d5",
