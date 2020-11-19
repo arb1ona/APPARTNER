@@ -53,11 +53,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/chat'
+                to='/blog'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Chat
+                Blog
               </Link>
             </li>
 
