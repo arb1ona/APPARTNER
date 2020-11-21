@@ -6,7 +6,7 @@ function Cards() {
   return (
     <div className='cards'>
       <div className='about'>
-        <h1>Our Services</h1>
+        <h1 style={{fontSize: "3rem"}}>Our Services</h1>
         <p>When it comes to Renting and Flatmates, we're here every step of the way.</p>
       </div>
       <div className='cards__container'>
@@ -24,7 +24,7 @@ function Cards() {
               title='Looking for a Flatmate?'
               description="Find your perfect partner to share a flat with."
               // label='Luxury'
-              path='/flatmate'
+              path='/forum'
             />
           </ul>
         </div>

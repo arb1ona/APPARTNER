@@ -1,10 +1,10 @@
 .cards {
   padding: 6rem;
-  color: #131F4F;
+  color: #131f4f;
 
   /* background: #fff; */
 }
-.about{
+.about {
   text-align: center;
 }
 /* 
@@ -41,7 +41,6 @@
   margin: 0 1rem;
   border-radius: 10px;
   background-color: white;
-
 }
 
 .cards__item__link {
@@ -104,7 +103,7 @@
 
 .cards__item__info {
   padding: 20px 30px 30px;
-  color: #131F4F;
+  color: #131f4f;
 }
 /* .cards__item__info h5 {
   color: #252e48;
