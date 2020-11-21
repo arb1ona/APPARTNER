@@ -4,6 +4,7 @@ import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Articles from '../Articles';
+import ScrollToTop from '../Scroll/ScrollToTop';
 
 function Home() {
   return (
