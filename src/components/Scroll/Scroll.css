@@ -1,0 +1,13 @@
+.MuiSvgIcon-root {
+  width: 3rem !important;
+  height: 3rem !important;
+  /* margin-right: 3rem; */
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  color: #131f4f;
+}
+.MuiIconButton-root {
+  left: 31rem;
+}
