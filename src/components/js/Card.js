@@ -8,10 +8,10 @@ const Card = ({ property, activeProperty, setActiveProperty }) => {
     <div id={`card-${index}`} className={`card col-sm-12 col-md-6 ${property === activeProperty ? 'is-active' : ''}`} onClick={() => setActiveProperty(property, false)}>
       <img src={picture} alt={city} />
 
-      <h5><b>{name}</b></h5>
+      {/* <h5><b>{name}</b></h5> */}
       <div className="details">
         {/* <span className="index">{index + 1}</span> */}
-        <p style={{fontWeight:"700"}}>{ title}</p>
+        <p style={{fontWeight:"700", marginTop:"10px"}}>{ title}</p>
         <p className="location" style={{fontSize:"1.2rem"}}>
           {address},{city}
         </p>
