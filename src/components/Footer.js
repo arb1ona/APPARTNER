@@ -3,9 +3,12 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import logo from './logo.png'
+import ScrollToTop from './Scroll/ScrollToTop'
 
 function Footer() {
   return (
+    <div>
+
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
@@ -62,15 +65,9 @@ function Footer() {
           </div>
         </div>
       </div>
+    </div >
       <section className='social-media'>
         <div className='social-media-wrap'>
-          {/* <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
-              {/* <img src={logo} style={{ width: "4rem" }}></img>
-              Appartner
-            </Link>
-          </div>
-      <small className='website-rights'>Appartner © 2020</small> */}
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
@@ -113,9 +110,10 @@ function Footer() {
               <i className='fab fa-linkedin' />
             </Link>
           </div>
+        < ScrollToTop/>
         </div>
       </section >
-    </div >
+    </div>
   );
 }
 
