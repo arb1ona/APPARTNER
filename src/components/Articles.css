@@ -1,16 +1,19 @@
-.blog{
+.blog {
   text-align: center;
-  color: #e9e9e9;
+  color: #edf0f2;
 }
-.partners{
+.blog h1 {
+  color: #edf0f2;
+  font-size: 3rem;
+}
+.partners {
   text-align: center;
-  color: #131F4F;
-padding-top: 3rem;
-padding-bottom: 3rem;
-
+  color: #131f4f;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.cards{
+.cards {
   flex-wrap: wrap;
 }
 

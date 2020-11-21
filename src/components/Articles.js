@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Articles.css';
 import CardItem from './CardItem';
 import AutoPlay from "./AutoPlay";
+import { Link } from 'react-router-dom';
+
 
 function Articles() {
+    const [click, setClick] = useState(false);
+
+    const closeMobileMenu = () => setClick(false);
     return (
         // <div className='article-container'>
         // <div className='cards' style={{ backgroundColor: '#244682' }}>
         <>
             <div className='cards' style={{ backgroundColor: '#244682' }}>
                 <div className='blog'>
-                    <h1>Blog Posts</h1>
+                <Link
+                to='/blog'
+                // onClick={closeMobileMenu}
+              >
+                <h1>Blog Posts</h1>
+              </Link>
+                    
                     <p>Enjoy the Best Things You Can Do And See In Tirana.</p>
                 </div>
                 <div className='cards__container'>
@@ -43,7 +54,7 @@ function Articles() {
 
             </div>
             <div className='partners'>
-                <h1>Our Partners</h1>
+                <h1 style={{fontSize: "3rem"}}>Our Partners</h1>
                 <p>They Will Talk About Us.</p>
             </div>
             <AutoPlay />
