@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import mapStyles from "./mapStyles";
 import './map.css';
-
 import { ButtonSearchDetails } from '../ButtonSearchDetails';
 
 
@@ -76,7 +75,6 @@ class GoogleMap extends React.Component {
         //text: `${index + 1}`,
         // },
         icon: {
-          //url:'https://svgshare.com/i/RUk.svg',
           url: 'https://svgshare.com/i/QBj.svg',
           scaledSize: new google.maps.Size(38, 40),
           origin: new google.maps.Point(0, 0),
