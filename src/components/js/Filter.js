@@ -63,8 +63,8 @@ class Filter extends Component {
                 </div>
                 <button className="btn-filter" onClick={(e) =>
                     toggleFilter(e)
-                }><strong>X</strong>Close</button>
-                {/* <strong>X</strong><span>Close</span></button> */}
+                }><p>Close</p>
+               </button>
             </form>
         );
     }
