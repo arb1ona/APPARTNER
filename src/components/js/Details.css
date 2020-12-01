@@ -69,15 +69,70 @@
   
 } */
 
-.features li.icon-bed {
+.icon-bed {
   background: url(./BedRooms.png) left center;
   background-size: auto 100%;
   background-repeat: no-repeat;
+  font-size: 3.5rem;
+  opacity: 50%;
+}
+/* .features ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+} */
+
+.inline-img {
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  vertical-align: baseline;
 }
 
-.features li.icon-air {
-  background: url(.././assests/AirConditionerEncluded.png) left center;
+.icon-air {
+  background: url(.././assests/AirConditionerEncluded.svg) left center;
   background-size: auto 100%;
   background-repeat: no-repeat;
   margin-right: 3rem;
 }
+
+.icon-bed {
+  background: url(.././assests/BedRooms.png) left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.icon-bath {
+  background: url(.././assests/Bathrooms.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.icon-animal {
+  background: url(.././assests/AnimalsEncluded.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon svg,
+.icon img {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+.icon.baseline svg,
+.icon img {
+  top: 0.125em;
+  position: relative;
+}
+
+/* .icon.icon.baseline li{
+  
+    list-style-type:none; 
+  
+} */
