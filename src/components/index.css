@@ -197,9 +197,16 @@ code {
   right: 45%;
 }
 
-.cards .container {
-  top: 10rem;
+.listings {
+  width: 50%;
+  margin-left: 50%;
+  position: relative;
+  z-index: 3;
 }
+
+/* .cards .container {
+  top: 10rem;
+} */
 .cards {
   max-width: 100%;
 }
@@ -227,11 +234,11 @@ h1 {
 }
 header {
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 100%;
   z-index: 2;
   position: fixed;
-  /* background-color: #cca63d;  */
+  background-color: #edf0f2;
 }
 header img {
   margin-top: 0;
@@ -250,7 +257,7 @@ header .btn-clear {
   background: transparent;
   border: none;
   text-decoration: none !important;
-  color: #1078ff;
+  color: #131f4f;
 }
 header .btn-clear:hover,
 header .btn-clear:active {
@@ -283,15 +290,18 @@ header .btn-clear:active {
   }
 }
 .btn-filter {
-  border-radius: 5px;
+  outline: none;
+  float: right;
+  border-radius: 10px;
+  margin-right: 15px;
   padding: 3px 15px;
   font-size: 16px;
   background: transparent;
-  color: #fff;
-  border: 1px #fff solid;
+  color: #131f4f;
+  border: 1px #131f4f solid;
   transition: all 0.3s linear;
   display: block;
-  width: 20%;
+  width: 10%;
 }
 .btn-filter:hover,
 .btn-filter:active {
@@ -335,9 +345,9 @@ header .btn-clear:active {
   margin-right: 10px;
 }
 .filter .btn-filter {
-  position: absolute;
+  /* position: absolute; */
   right: 100px;
-  top: 20px;
+  margin-top: -1rem;
   width: auto;
 }
 @media (min-width: 992px) {
@@ -346,16 +356,43 @@ header .btn-clear:active {
     width: 80px;
   }
 }
+#filterBedrooms {
+  border-radius: 7px !important;
+}
+#filterBathrooms {
+  border-radius: 7px !important;
+}
+#filterCars {
+  border-radius: 7px !important;
+}
+#priceFrom {
+  border-radius: 7px !important;
+}
+#priceTo {
+  border-radius: 7px !important;
+}
+#filterSort {
+  border-radius: 7px !important;
+}
+
+/* .btn-clear{
+  border-color: #131f4f;
+
+    border-radius: 7px !important;
+  
+} */
+
 .filter-is-visible .filter {
+  /* flex-wrap: wrap; */
   transform: translateY(0%);
 }
 .filter-is-visible .btn-filter {
-  background-color: #1078ff;
+  border-color: #131f4f;
 }
 .filter-is-visible .btn-filter:hover,
 .filter-is-visible .btn-filter:active {
-  background-color: #1078ff;
-  color: #fff;
+  background-color: #fff;
+  color: #131f4f;
 }
 /* .mapContainer {
   position: fixed;
@@ -385,7 +422,7 @@ body {
 } */
 .cards-list {
   width: 45%;
-  /* margin-top: 3.5rem; */
+  margin-top: 4.3rem;
   margin-left: 55%;
   /* z-index: 500; */
   /* background-color: #239c6a; */

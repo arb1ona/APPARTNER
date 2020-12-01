@@ -80,14 +80,16 @@ class ListingScreen extends React.Component {
     const { properties, activeProperty, filterIsVisible } = this.state;
     return (
 
-      <div>
-        {/* <Header
+      <div className="listing">
+        <Header
           filterIsVisible={filterIsVisible}
           toggleFilter={this.toggleFilter}
           handleFilterChange={this.handleFilterChange}
-        ></Header> */}
-        <div className="new__filters"></div>
-        <div className="cards-list row ">
+        ></Header>
+        {/* <div className="new__filters"></div> */}
+        <div className="cards container" style={{paddingRight:"20px"}}>
+
+        <div className="cards-list row " style={{paddingLeft:"15px"}}>
           {
             properties.map(property => {
               return <Card
@@ -100,7 +102,9 @@ class ListingScreen extends React.Component {
           }
 
         </div>
-        <GoogleMap
+        
+          </div>
+          <GoogleMap
           properties={properties}
           activeProperty={activeProperty}
           setActiveProperty={this.setActiveProperty}
@@ -112,82 +116,3 @@ class ListingScreen extends React.Component {
 
 export default ListingScreen;
 
-// import React, { Component } from 'react';
-// import Card from './Card';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import GoogleMap from './GoogleMap';
-// import Header from './Header';
-// import data from './data/Data';
-// import jump from 'jump.js'
-// import { easeInOutCubic } from 'ez.js';
-
-
-// class ListingScreen extends Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       properties: data.properties,
-//       activeProperty: data.properties[0]
-//     }
-
-//     this.setActiveProperty = this.setActiveProperty.bind(this);
-//   }
-
-//   setActiveProperty(property, scroll) {
-//     const { index } = property;
-//     this.setState({
-//       activeProperty: property,
-//     });
-
-//     //only scroll if we click on the pin, not the card
-//     if (scroll) {
-//       // scroll to the right property
-//       const target = `#card-${index}`;
-//       jump(target, {
-//         duration: 2000,
-//         // offset: 0,
-//         // callback: undefined,
-//         easing: easeInOutCubic
-//       });
-//     }
-//   }
-
-//   render() {
-//     const { properties, activeProperty } = this.state
-//     return (
-//       <div>
-//         <GoogleMap
-//           activeProperty={activeProperty}
-//           properties={properties}
-//           setActiveProperty={this.setActiveProperty}
-//         />
-
-//         <div className="cards container">
-//           <div className="cards-list row ">
-//             <Header />
-//             {
-//               properties.map(property => {
-//                 return <Card
-//                   activeProperty={activeProperty}
-//                   key={property._id}
-//                   property={property}
-//                   setActiveProperty={this.setActiveProperty}
-//                 />
-//               })
-//             }
-//           </div>
-//         </div>
-
-//         {/* <GoogleMap
-//           activeProperty={activeProperty}
-//           properties={properties}
-//           setActiveProperty={this.setActiveProperty} /> */}
-//       </div>
-
-
-//     )
-//   }
-// }
-
-// export default ListingScreen;
