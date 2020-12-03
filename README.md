@@ -11,7 +11,7 @@ $ npm run dev
 
 ###  What we will be covering ?
 
-[x] Props & State concepts
+- [x] Props & State concepts
 
 [x] Functional & Class Components
 [x] Routing in React
